@@ -7,7 +7,7 @@ from routes.order_route import order_bp
 def init_app():
     app = Flask(__name__)
     engine = create_engine(
-        'mysql+mysqlconnector://root:abc@mysql-container:3306/phoneStore')
+        'mysql+mysqlconnector://root:abc@db_container:3306/phoneStore')
     engine.connect()  # Ensure connection is established
 
     session = sessionmaker(bind=engine)
