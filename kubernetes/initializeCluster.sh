@@ -1,0 +1,1 @@
+kubectl apply -f java-service-deployment.yaml -f python-service-deployment.yaml -f mysql-deployment.yaml
