@@ -1,0 +1,45 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: phonestore-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+ name: phonestore-virtualservice
+spec:
+ hosts:
+ - "*"
+ gateways:
+ - phonestore-gateway
+ http:
+ - match:
+   - uri:
+       prefix: /java
+   rewrite:
+      uri: /
+   route:
+   - destination:
+       host: java-service.default.svc.cluster.local
+       port:
+         number: 8080
+ - match:
+   - uri:
+       prefix: /python
+   rewrite:
+      uri: /
+   route:
+   - destination:
+       host: python-service.default.svc.cluster.local
+       port:
+         number: 5000
