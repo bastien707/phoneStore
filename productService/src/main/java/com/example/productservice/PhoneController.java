@@ -15,7 +15,7 @@ public class PhoneController {
         return "Hello from Product Service";
     }
 
-    @GetMapping("phones/all")
+    @GetMapping("/phones/all")
     public @ResponseBody List<Phone> getAllPhones() {
         return (List<Phone>) phoneRepository.findAll();
     }
