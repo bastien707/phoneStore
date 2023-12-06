@@ -15,6 +15,7 @@ spec:
       containers:
       - name: java-service
         image: joel22222/phone_image:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
