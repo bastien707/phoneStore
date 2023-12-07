@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+
 export default function Home() {
   return (
     <div className="homeContainer">
@@ -10,15 +11,22 @@ export default function Home() {
 
       <section className="featuredProducts">
         <h2>Featured Products</h2>
-        <div className="productList">
-          <div className="productItem">
-            <img src="path-to-image" alt="Product Name" />
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <Link to="/products/product-id" className="viewProductButton">
-              View Product
-            </Link>
-          </div>
+        <div className="gallery">
+          <figure className="gallery__item gallery__item--1">
+            <img className="gallery__img" src="img/home_phone_1.avif" alt="placeholder" />
+          </figure>
+          <figure className="gallery__item gallery__item--2">
+            <img className="gallery__img" src="img/home_phone_2.avif" alt="placeholder" />
+          </figure>
+          <figure className="gallery__item gallery__item--3">
+            <img className="gallery__img" src="img/home_phone_3.avif" alt="placeholder" />
+          </figure>
+          <figure className="gallery__item gallery__item--4">
+            <img className="gallery__img" src="img/home_phone_4.avif" alt="placeholder" />
+          </figure>
+          <figure className="gallery__item gallery__item--5">
+            <img className="gallery__img" src="img/home_phone_5.avif" alt="placeholder" />
+          </figure>
         </div>
       </section>
 
