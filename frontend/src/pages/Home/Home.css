@@ -1,0 +1,101 @@
+/* Home.css */
+.homeContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.homeHeader {
+  margin-bottom: 40px;
+}
+
+.homeHeader h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.homeHeader p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.featuredProducts {
+  margin-bottom: 40px;
+}
+
+.featuredProducts h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.productList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productItem {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.productItem img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.productItem h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.productItem p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.viewProductButton {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.viewProductButton:hover {
+  background-color: #0056b3;
+}
+
+.aboutUs {
+  margin-bottom: 40px;
+}
+
+.aboutUs h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aboutUs p {
+  font-size: 1em;
+  color: #666;
+}
+
+.homeFooter {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.homeFooter p {
+  font-size: 1em;
+  color: #333;
+}
