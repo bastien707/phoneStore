@@ -3,7 +3,6 @@ import { ProductData } from "../../pages/ProductPage/Products";
 import "./ProductItem.css";
 
 export default function ProcutItem(product: ProductData) {
-  console.log(product);
   return (
     <div className="productItemContainer">
       <h3>{product.name}</h3>

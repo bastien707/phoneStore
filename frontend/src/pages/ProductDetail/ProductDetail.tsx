@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ProductData } from "../ProductPage/Products";
+import OrderForm from "../../components/OrderForm/OrderForm";
+import "./ProductDetail.css";
 
-const ProductDetail = () => {
+export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
 
   const [product, setProduct] = useState<ProductData | null>(null);
@@ -28,18 +30,28 @@ const ProductDetail = () => {
   }, [id]);
 
   if (!product) {
-    return <div>Product {id} not found </div>;
+    return (
+      <div className="pageContainer">
+        <h1>Product not found</h1>
+      </div>
+    );
   }
 
   return (
-    <div>
+    <div className="pageContainer">
       {loading && <p>Loading product data...</p>}
       {error && <p>Error fetching data: {error}</p>}
-      <h2>{product.name}</h2>
-      <p>{product.brand}</p>
-      <p>${product.price}</p>
+      <div className="productDetailHeaderContainer">
+        <h1>{product.name}</h1>
+        <h2>{product.brand}</h2>
+        <span>${product.price}</span>
+      </div>
+
+      <img src={`../img/home_phone_${id}.avif`} alt={product.name} />
+
+      <h1>Order now</h1>
+      <h2>Fill in the form below to order this product</h2>
+      <OrderForm />
     </div>
   );
-};
-
-export default ProductDetail;
+}
