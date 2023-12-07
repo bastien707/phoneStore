@@ -1,24 +1,34 @@
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
     <nav className="navContainer">
       <ul className="navList">
         <li className="navListItem">
-          <Link className="linkButton" to="/">
+          <NavLink
+            className={({ isActive }) => ["linkButton", isActive ? "active" : null].filter(Boolean).join(" ")}
+            to="/"
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="navListItem">
-          <Link className="linkButton" to="/products">
+          <NavLink
+            className={({ isActive }) => ["linkButton", isActive ? "active" : null].filter(Boolean).join(" ")}
+            to="/products"
+          >
             Products
-          </Link>
+          </NavLink>
         </li>
         <li className="navListItem">
-          <Link className="linkButton" to="/orders">
+          <NavLink
+            className={({ isActive }) => ["linkButton", isActive ? "active" : null].filter(Boolean).join(" ")}
+            to="/orders"
+          >
             Orders
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -9,7 +9,8 @@
   cursor: pointer;
 }
 
-.linkButton:hover {
+.linkButton:hover,
+.active {
   color: rgb(12, 74, 156);
   border-bottom: 4px solid rgb(12, 74, 156);
   transition: border-bottom 0.1s ease;
