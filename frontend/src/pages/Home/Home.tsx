@@ -3,7 +3,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="homeContainer">
+    <div className="pageContainer">
       <header className="homeHeader">
         <h1>Welcome to PhoneStore</h1>
         <p>Your one-stop shop for the latest smartphones and accessories.</p>

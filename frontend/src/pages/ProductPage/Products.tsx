@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import ProcutItem from "../../components/ProductItem/ProductItem";
+import "./Products.css";
 
 export interface ProductData {
   id: number;
   name: string;
   brand: string;
   price: number;
-  imageUrl: string | null;
+  imageUrl: string | undefined;
 }
 
 export default function Products() {
@@ -34,19 +35,19 @@ export default function Products() {
   }, []);
 
   return (
-    <>
+    <div className="pageContainer">
       <h2>Products</h2>
       {loading && <p>Loading product data...</p>}
       {error && <p>Error fetching data: {error}</p>}
       {productData && (
-        <ul>
+        <div className="productList">
           {productData.map((product) => (
-            <li key={product.id}>
+            <div key={product.id}>
               <ProcutItem {...product} />
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
-    </>
+    </div>
   );
 }

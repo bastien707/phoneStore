@@ -36,7 +36,7 @@ export default function Order() {
   }, []);
 
   return (
-    <>
+    <div className="pageContainer">
       <h2>Orders</h2>
       {loading && <p>Loading order data...</p>}
       {error && <p>Error fetching data: {error}</p>}
@@ -52,6 +52,6 @@ export default function Order() {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
