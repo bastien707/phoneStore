@@ -38,4 +38,8 @@ figure img {
   .viewProductButton {
     padding: 5px 16px;
   }
+
+  h3 {
+    margin: 0.3em;
+  }
 }
