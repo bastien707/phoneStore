@@ -21,6 +21,10 @@ public class PhoneController {
         return (List<Phone>) phoneRepository.findAll();
     }
 
+    @GetMapping("/phones/{id}")
+    public @ResponseBody Phone getPhoneById(@PathVariable Long id) {
+        return phoneRepository.findById(id).get();
+    }
 
     @PostMapping("/phones/add")
     public @ResponseBody String addNewPhone(@RequestBody PhoneRequest p) {
