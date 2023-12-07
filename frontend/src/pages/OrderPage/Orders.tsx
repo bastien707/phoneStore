@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import OrderItem from "../../components/OrderItem/OrderItem";
+import "./Orders.css";
 
-interface OrderData {
+export interface OrderData {
   address: string;
   id: number;
   phone_id: number;
@@ -41,16 +43,13 @@ export default function Order() {
       {loading && <p>Loading order data...</p>}
       {error && <p>Error fetching data: {error}</p>}
       {ordersData && (
-        <ul>
+        <div className="orderList">
           {ordersData.orders.map((order) => (
-            <li key={order.id}>
-              <p>Order ID: {order.id}</p>
-              <p>User Name: {order.userName}</p>
-              <p>Address: {order.address}</p>
-              <p>Phone ID: {order.phone_id}</p>
-            </li>
+            <div key={order.id} className="orderItemContainer">
+              <OrderItem {...order} />
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
