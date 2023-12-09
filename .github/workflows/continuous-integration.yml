@@ -37,6 +37,6 @@ jobs:
       run: |
         git config user.name "${{ secrets.GH_USERNAME }}"
         git config user.email "${{ secrets.GH_USERNAME }}"
-        git add /productService/target/productService-0.0.1-SNAPSHOT.jar
+        git add /home/runner/work/phoneStore/phoneStore/productService/target/productService-0.0.1-SNAPSHOT.jar
         git commit -m "Update JAR"
         git push
