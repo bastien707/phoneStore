@@ -1,9 +1,9 @@
 name: Update Jar and Docker Image
 
-on: push #[workflow_dispatch]
-  #push:
-    #paths:
-      #- 'productService/**/*'
+on: 
+  push:
+    paths:
+      - 'productService/**/*'
 
 jobs:
   build_and_deploy:
