@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
     
     - name: Move to Project Directory
-      run: cd /productService
+      run: cd /home/runner/work/phoneStore/phoneStore/productService
 
     - name: Build JAR
       run: mvn clean package
