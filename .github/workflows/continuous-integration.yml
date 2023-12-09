@@ -2,8 +2,7 @@ name: Update Jar and Docker Image
 
 on: 
   push:
-    paths:
-      - productService/**
+    paths: [productService/**]
 
 jobs:
   build_and_deploy:
