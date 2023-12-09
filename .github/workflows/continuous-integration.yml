@@ -19,11 +19,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
-    - name: Move to Project Directory
-      run: cd /home/runner/work/phoneStore/phoneStore/productService
-
-    - name: Build JAR
-      run: mvn clean package
+    - name: Build JAR 
+      run: |
+        cd /home/runner/work/phoneStore/phoneStore/productService
+        mvn clean package
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
