@@ -32,8 +32,8 @@ jobs:
 
     - name: Update JAR on GitHub
       run: |
-        git config user.name "Your Name"
-        git config user.email "your.email@example.com"
+        git config user.name "${{ secrets.GH_USERNAME }}"
+        git config user.email "${{ secrets.GH_USERNAME }}"
         git add /productService/target/productService-0.0.1-SNAPSHOT.jar
         git commit -m "Update JAR"
         git push
