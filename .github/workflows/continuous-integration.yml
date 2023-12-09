@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Update Jar and Docker Image
 
 on: [workflow_dispatch]
   #push:
@@ -18,6 +18,9 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    
+    - name: Move to Project Directory
+      run: cd /productService
 
     - name: Build JAR
       run: mvn clean package
