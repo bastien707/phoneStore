@@ -3,7 +3,7 @@ name: Update Jar and Docker Image
 on: 
   push:
     paths:
-      - 'phoneStore/productService/**'
+      - '.github/workflows/continuous-integration.yml'
 
 jobs:
   build_and_deploy:
