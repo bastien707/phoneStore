@@ -3,7 +3,7 @@ name: Update Jar and Docker Image
 on: 
   push:
     paths:
-      - 'productService/pom.xml'
+      - 'productService/**/*'
 
 jobs:
   build_and_deploy:
