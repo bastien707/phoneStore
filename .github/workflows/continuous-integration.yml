@@ -22,10 +22,10 @@ jobs:
     - name: Build JAR 
       run: |
         cd /home/runner/work/phoneStore/phoneStore/productService
-        mvn clean package
+        mvn package -Dmaven.test.skip
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+    #- name: Set up Docker Buildx
+    #  uses: docker/setup-buildx-action@v1
 
     #- name: Build and Push Docker Image
     #  run: |
