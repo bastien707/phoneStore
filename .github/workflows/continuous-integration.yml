@@ -2,8 +2,10 @@ name: Update Jar and Docker Image
 
 on: 
   push:
+    branches:
+     - '*' 
     paths:
-      - '.github/workflows/continuous-integration.yml'
+      - 'productService/**'
 
 jobs:
   build_and_deploy:
