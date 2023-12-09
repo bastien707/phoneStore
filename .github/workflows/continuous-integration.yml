@@ -2,8 +2,6 @@ name: Update Jar and Docker Image
 
 on: 
   push:
-    branches:
-     - '*' 
     paths:
       - 'productService/**/*'
 
