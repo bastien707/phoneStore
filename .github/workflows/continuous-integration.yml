@@ -1,4 +1,4 @@
-name: Update Jar and Docker Image
+name: Update Jar and Docker Image of ProductService
 
 on:
   push:
