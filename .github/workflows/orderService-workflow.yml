@@ -1,9 +1,9 @@
 name: Update Jar and Docker Image of orderService
 
-on: [workflow_dispatch]
-  #push:
-    #paths: 
-      #- orderService/**
+on: 
+  push:
+    paths: 
+      - orderService/**
 
 jobs:
   build_and_deploy:
