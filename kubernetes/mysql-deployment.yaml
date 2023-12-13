@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: db-container
-        image: joel22222/phonestore_db_image
+        image: bastien707/phonestore_db_image
         ports:
         - containerPort: 3306
 ---
