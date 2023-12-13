@@ -33,4 +33,4 @@ jobs:
         cd /home/runner/work/phoneStore/phoneStore/productService/image
         docker build -t ${{ secrets.DOCKER_USERNAME }}/phone_image:latest .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-        docker push your-dockerhub-username/your-image-name:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/phone_image:latest
