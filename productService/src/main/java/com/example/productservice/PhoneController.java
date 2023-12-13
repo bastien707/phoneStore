@@ -28,7 +28,7 @@ public class PhoneController {
         phone.setName(p.getName());
         phone.setBrand(p.getBrand());
         phone.setPrice(p.getPrice());
-        phone.setImageUrl(p.getImageUrl());
+        phone.setImage_url(p.getImage_url());
         phoneRepository.save(phone);
         return "Saved";
     }
