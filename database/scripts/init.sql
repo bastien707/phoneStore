@@ -5,14 +5,15 @@ CREATE TABLE phone (
     name VARCHAR(255) NOT NULL,
     brand VARCHAR(255) NOT NULL,
     price DECIMAL(10, 2) NOT NULL,
-    imageUrl VARCHAR(255) 
+    imageUrl VARCHAR(255) NOT NULL
 );
 
 INSERT INTO phone (name, brand, price, imageUrl) VALUES
 ('Phone1', 'Brand1', 499.99, 'url_image1'),
 ('Phone2', 'Brand2', 699.99, 'url_image2'),
 ('Phone3', 'Brand3', 899.99, 'url_image3'),
-('Phone4', 'Brand4', 899.99, 'url_image4');
+('Phone4', 'Brand4', 899.99, 'url_image4'),
+('IPhone 15', 'Apple', 1499.99, 'https://images.unsplash.com/photo-1695048133021-be2def43f3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 
 
 CREATE TABLE command (
