@@ -18,6 +18,10 @@ def serialize_order(Order):
 def order():
     return 'Order Service!'
 
+@order_bp.route('/test', methods=['GET'])
+def test():
+    return 'Your test is working!' 
+
 
 @order_bp.route('/order', methods=['GET'])
 def get_order():
