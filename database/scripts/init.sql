@@ -5,10 +5,10 @@ CREATE TABLE phone (
     name VARCHAR(255) NOT NULL,
     brand VARCHAR(255) NOT NULL,
     price DECIMAL(10, 2) NOT NULL,
-    imageUrl VARCHAR(255) NOT NULL
+    image_url VARCHAR(255) NOT NULL
 );
 
-INSERT INTO phone (name, brand, price, imageUrl) VALUES
+INSERT INTO phone (name, brand, price, image_url) VALUES
 ('Phone1', 'Brand1', 499.99, 'url_image1'),
 ('Phone2', 'Brand2', 699.99, 'url_image2'),
 ('Phone3', 'Brand3', 899.99, 'url_image3'),
