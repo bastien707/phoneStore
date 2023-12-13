@@ -34,11 +34,3 @@ jobs:
         docker build -t your-dockerhub-username/your-image-name:latest .
     #    docker login -u your-dockerhub-username -p ${{ secrets.DOCKERHUB_TOKEN }}
     #    docker push your-dockerhub-username/your-image-name:latest
-
-    - name: Update JAR on GitHub
-      run: |
-        git config user.name "${{ secrets.GH_USERNAME }}"
-        git config user.email "${{ secrets.GH_EMAIL }}"
-        git add /home/runner/work/phoneStore/phoneStore/productService/image/productService-0.0.1-SNAPSHOT.jar
-        git commit -m "Update JAR"
-        git push
