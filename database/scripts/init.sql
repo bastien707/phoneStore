@@ -13,8 +13,8 @@ INSERT INTO phone (name, brand, price, imageUrl) VALUES
 ('Phone2', 'Brand2', 699.99, 'url_image2'),
 ('Phone3', 'Brand3', 899.99, 'url_image3'),
 ('Phone4', 'Brand4', 899.99, 'url_image4'),
-('IPhone 15', 'Apple', 1499.99, 'https://images.unsplash.com/photo-1695048133021-be2def43f3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-
+('IPhone 15', 'Apple', 1499.99, 'https://images.unsplash.com/photo-1695048133021-be2def43f3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+('IPhone 16', 'Apple', 3499.99, 'https://images.unsplash.com/photo-1695048133021-be2def43f3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 
 CREATE TABLE command (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
