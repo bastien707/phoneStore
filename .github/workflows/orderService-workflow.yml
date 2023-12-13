@@ -19,6 +19,6 @@ jobs:
     - name: Build and Push Docker Image
       run: |
         cd /home/runner/work/phoneStore/phoneStore/orderService
-        docker build -t your-dockerhub-username/your-image-name:latest .
-    #    docker login -u your-dockerhub-username -p ${{ secrets.DOCKERHUB_TOKEN }}
-    #    docker push your-dockerhub-username/your-image-name:latest
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/order_image:latest .
+        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+        docker push ${{ secrets.DOCKER_USERNAME }}/order_image:latest
