@@ -14,7 +14,7 @@ public class Phone {
     private String name;
     private String brand;
     private float price;
-    private String imageUrl;
+    private String image_url;
 
     public void setId(Long id) {
         this.id = id;
@@ -48,12 +48,12 @@ public class Phone {
         this.price = price;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImage_url(String imageUrl) {
+        this.image_url = imageUrl;
     }
 
 }
