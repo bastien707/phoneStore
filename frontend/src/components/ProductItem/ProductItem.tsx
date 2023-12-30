@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import { ProductData } from "../../pages/ProductPage/Products";
 import "./ProductItem.css";
 
-export default function ProcutItem(product: ProductData) {
+export default function ProductItem(product: ProductData) {
   return (
     <div className="productItemContainer">
       <h3>{product.name}</h3>
-      {product.imageUrl != null ? (
+      {product.image_url != null ? (
         <figure className="productImageContainer">
-          <img src={product.imageUrl} alt={product.name} />
+          <img src={product.image_url} alt={product.name} />
         </figure>
       ) : (
         <figure className="productImageContainer">

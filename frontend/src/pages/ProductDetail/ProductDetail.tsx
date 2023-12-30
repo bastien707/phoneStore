@@ -47,7 +47,7 @@ export default function ProductDetail() {
         <span>${product.price}</span>
       </div>
 
-      <img src={`../img/home_phone_${id}.avif`} alt={product.name} />
+      <img src={product.image_url} alt={product.name} />
 
       <h1>Order now</h1>
       <h2>Fill in the form below to order this product</h2>
